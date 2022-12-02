@@ -15,16 +15,16 @@ que: "Sí tiene permiso de acceso" si la edad es mayor que 18 años.   -->
 
     let edad = 0;
    
-    edad =prompt("Edad?", "0");
-    if ((edad >=18) && (edad < 120) )
-    {
-        document.write(`<h3>Bienvenido@</h3>`)
-    }
-   
-    else 
-    {
-        document.write(`<h3>No tiene acceso a la web</h3>`)
-    }
+        edad =prompt("Edad?", "0");
+        if ((edad>=1)&&(edad<=120)) {
+            if (edad>=18) {
+                document.write(`<h3>Sí tiene permiso de acceso</h3>`)
+            } else {
+                document.write(`<h3>No tiene permiso de acceso</h3>`)
+            }
+        } else {
+            document.write(`<h3>NO SE PERMITEN MENORES QUE 1 AÑO NI MAYORES DE 120</h3>`)
+        }
    </script> 
 </body>
 </html>
